@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF8F8"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="0dp">
+
+   <!-- overlapping circles -->
+   <ImageView
+       android:id="@+id/circle1"
+       android:layout_width="192dp"
+       android:layout_height="169dp"
+       android:alpha="0.2"
+       android:src="@drawable/circle"
+       tools:ignore="MissingConstraints"
+       tools:layout_editor_absoluteX="-16dp"
+       tools:layout_editor_absoluteY="-68dp" />
+
+   <ImageView
+       android:id="@+id/circle2"
+       android:layout_width="177dp"
+       android:layout_height="217dp"
+       android:alpha="0.2"
+       android:src="@drawable/circle"
+       tools:ignore="MissingConstraints"
+       tools:layout_editor_absoluteX="-87dp"
+       tools:layout_editor_absoluteY="-18dp" />
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent">
+
+
+         <TextView
+             android:id="@+id/appname1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/ciabatta"
+             android:inputType="text"
+             android:text="mentor"
+             android:textColor="#26979F"
+             android:textSize="65dp"
+             />
+
+         <TextView
+             android:id="@+id/appname2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/ciabatta"
+             android:inputType="text"
+             android:text="me"
+             android:textColor="#FFC90A"
+             android:textSize="65dp" />
+
+      </LinearLayout>
+
+         <TextView
+             android:id="@+id/appname3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:inputType="text"
+             android:text="connect. ask. learn"
+             android:textColor="#0B7A81"
+             android:textSize="25dp" />
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
