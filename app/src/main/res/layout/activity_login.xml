@@ -174,7 +174,6 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/whitebox"
-                    android:backgroundTint="#FFFFFF"
                     android:text="Login"
                     android:textColor="#50C2C9"
                     android:textAllCaps="false"
