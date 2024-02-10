@@ -21,17 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Forgot Password?"
+        android:text="Reset Password?"
         android:textColor="#157177"
         android:textSize="25sp"
         android:textStyle="bold"
- />
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don’t worry! It happens. Please enter the
-email associated with your account."
+        android:text="Please type a new password and re-enter the
+password. Type something you will
+remember!"
         android:textColor="#000000"
         android:textSize="15sp"
         android:layout_gravity="center"
@@ -42,32 +43,53 @@ email associated with your account."
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
-        android:text="Email"
+        android:text="New Password"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/newpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/whitebox"
-        android:hint="Enter Email"
+        android:hint="Enter New Password"
         android:inputType="textEmailAddress"
         android:padding="13dp"
         android:layout_marginStart="-3dp"
         android:textSize="13sp"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Confirm Password"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/confirmpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitebox"
+        android:hint="Re-enter Password"
+        android:inputType="textEmailAddress"
+        android:padding="13dp"
+        android:layout_marginStart="-3dp"
+        android:textSize="13sp"
+        tools:ignore="TouchTargetSizeCheck" />
     <Button
-        android:id="@+id/sendemail"
+        android:id="@+id/resetpass"
         android:layout_width="175dp"
         android:layout_height="35dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:background="@drawable/whitebox"
         android:backgroundTint="#157177"
-        android:text="Send"
+        android:text="Reset Password"
         android:textColor="#FFFFFF"
         android:textAllCaps="false"
         tools:ignore="TouchTargetSizeCheck" />
@@ -84,7 +106,7 @@ email associated with your account."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
-            android:text="Remember your password?"
+            android:text="Don’t want to reset password?"
             android:textColor="#000000"
             android:textSize="12sp"
             tools:ignore="TouchTargetSizeCheck"
@@ -104,4 +126,4 @@ email associated with your account."
 
     </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>
