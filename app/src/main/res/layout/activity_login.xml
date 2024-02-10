@@ -170,12 +170,14 @@
                 <Button
                     android:id="@+id/login"
                     android:layout_width="175dp"
-                    android:layout_height="48dp"
+                    android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
+                    android:background="@drawable/whitebox"
                     android:backgroundTint="#FFFFFF"
                     android:text="Login"
                     android:textColor="#50C2C9"
+                    android:textAllCaps="false"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <LinearLayout

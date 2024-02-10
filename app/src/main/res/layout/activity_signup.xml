@@ -186,16 +186,34 @@
                     android:textColor="#ffffff"
                     android:textSize="10sp" />
 
-                <Spinner
-                    android:id="@+id/country"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:background="@drawable/whitebox"
-                    android:spinnerMode="dropdown"
-                    android:padding="10dp"
-                    tools:ignore="TouchTargetSizeCheck"/>
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/whitebox"
+                        android:spinnerMode="dropdown"
+                        android:padding="10dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/dropdown1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignEnd="@id/country"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/dropdown"
+                        android:alpha="0.5"
+                        />
+
+                </RelativeLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -207,16 +225,32 @@
                     android:textColor="#ffffff"
                     android:textSize="10sp" />
 
-                <Spinner
-                    android:id="@+id/city"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:background="@drawable/whitebox"
-                    android:spinnerMode="dropdown"
-                    android:padding="10dp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/whitebox"
+                        android:spinnerMode="dropdown"
+                        android:padding="10dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <ImageView
+                        android:id="@+id/dropdown2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignEnd="@id/city"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/dropdown"
+                        android:alpha="0.5"
+                        />
+
+            </RelativeLayout>
 
 
                 <TextView
@@ -248,7 +282,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25sp"
                     android:layout_marginTop="5sp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginEnd="25dp"
                     android:text="Password must be at least 8 chracters long"
                     android:textColor="#ffffff"
@@ -259,12 +293,14 @@
                 <Button
                     android:id="@+id/login"
                     android:layout_width="175dp"
-                    android:layout_height="48dp"
+                    android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
+                    android:background="@drawable/whitebox"
                     android:backgroundTint="#FFFFFF"
                     android:text="Signup"
                     android:textColor="#50C2C9"
+                    android:textAllCaps="false"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <LinearLayout
