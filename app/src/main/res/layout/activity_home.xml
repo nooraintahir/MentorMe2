@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DEF8F8"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
+
 
     <ImageView
         android:id="@+id/circle1"
@@ -44,14 +45,12 @@
         app:layout_constraintTop_toTopOf="parent"
         android:paddingBottom="?android:attr/actionBarSize">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginTop="30dp"
             android:paddingStart="20dp"
-            android:layout_gravity="right"
 
             >
             <RelativeLayout
@@ -119,7 +118,7 @@
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:layout_marginEnd="10dp"
-                    />
+                        />
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="35dp"
@@ -146,7 +145,7 @@
                         android:layout_marginEnd="10dp"
                         />
 
-                        <Button
+                    <Button
                         android:layout_width="110dp"
                         android:layout_height="35dp"
                         android:background="@drawable/whitebox"
@@ -158,7 +157,7 @@
                         android:textAlignment="center"
                         android:textAllCaps="false"/>
 
-                        <Button
+                    <Button
                         android:layout_width="60dp"
                         android:layout_height="35dp"
                         android:background="@drawable/whitebox"
@@ -210,20 +209,18 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/topmentor1"
-                        android:layout_marginEnd="10sp"
                         />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/topmentor2"
-                        android:layout_marginEnd="10sp"
                         />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/topmentor3"
                         />
                 </LinearLayout>
@@ -266,20 +263,18 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/edumentor1"
-                        android:layout_marginEnd="10sp"
                         />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/edumentor2"
-                        android:layout_marginEnd="10sp"
                         />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/edumentor3"
                         />
                 </LinearLayout>
@@ -324,20 +319,18 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/recentmentor1"
-                        android:layout_marginEnd="10sp"
                         />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/recentmentor2"
-                        android:layout_marginEnd="10sp"
                         />
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
                         android:src="@drawable/recentmentor3"
                         />
                 </LinearLayout>
@@ -350,46 +343,4 @@
     </ScrollView>
 
 
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:backgroundTint="#FFFFFF"
-        app:fabCradleMargin="0dp"
-        app:contentInsetStart="0dp"
-        >
-
-        <!-- BottomNavigationView -->
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="#157177"
-            app:menu="@menu/nav_bar"
-            app:itemIconTint="@drawable/item_nav"
-            app:itemTextColor="@drawable/item_nav"
-            app:labelVisibilityMode="labeled"
-
-            />
-
-    </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <!-- Floating Action button -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#157177"
-        android:tint="#FFFFFF"
-        app:fabSize="normal"
-        app:layout_anchor="@id/bar"
-        app:srcCompat="@drawable/add_circle"
-        app:maxImageSize="40dp"
-        app:layout_anchorGravity="center_horizontal"
-        android:clickable="true"
-        app:elevation="0dp" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

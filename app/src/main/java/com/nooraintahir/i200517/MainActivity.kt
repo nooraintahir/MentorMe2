@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // Delayed navigation to HomeActivity
         Handler().postDelayed({
-            startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+            startActivity(Intent(this@MainActivity, NavigationActivity::class.java))
         }, SPLASH_DELAY)
     }
 }
