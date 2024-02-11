@@ -34,4 +34,8 @@ class NavigationActivity : AppCompatActivity() {
             .replace(R.id.frame_layout, fragment)
             .commit()
     }
+
+    fun showSearchResults() {
+        replaceFragment(SearchResultsActivity())
+    }
 }
