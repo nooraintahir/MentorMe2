@@ -243,8 +243,8 @@ principles and user experience."
                 android:text="Drop a review "
                 android:textAllCaps="false"
                 android:textColor="#157177"
-                android:textStyle="bold"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/community"
@@ -267,7 +267,6 @@ principles and user experience."
             android:id="@+id/session"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/people"
             android:background="@drawable/whitebox"
             android:backgroundTint="#157177"
             android:paddingStart="16dp"
@@ -277,7 +276,6 @@ principles and user experience."
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textAllCaps="false"
-            android:textAlignment="center"
             />
 
     </LinearLayout>
