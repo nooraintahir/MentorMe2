@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F4F3"
-    tools:context=".LoginActivity">
+    tools:context=".AddMentorActivity">
 
     <!-- overlapping circles -->
     <ImageView
@@ -35,7 +34,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="left"
         android:orientation="vertical"
         android:weightSum="10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,43 +43,47 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            android:paddingBottom="20dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:padding="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/backarrow"
+                android:layout_gravity="start"/>
 
             <TextView
-                android:id="@+id/appname1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/ciabatta"
-                android:inputType="text"
-                android:text="mentor"
-                android:textColor="#26979F"
-                android:textSize="45sp" />
-
+                android:layout_marginTop="20dp"
+                android:text="Add New Mentor"
+                android:textColor="#157177"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
             <TextView
-                android:id="@+id/appname2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/ciabatta"
-                android:inputType="text"
-                android:text="me"
-                android:textColor="#FFC90A"
-                android:textSize="45sp" />
+                android:text="Help us expand!"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:paddingTop="10sp"/>
 
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7">
+            android:layout_weight="7.5">
 
             <View
                 android:layout_width="match_parent"
@@ -93,126 +96,109 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/picture"/>
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/video"/>
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="10dp"
-                    android:text="Login"
-                    android:textColor="#ffffff"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="30dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Email"
+                    android:text="Name"
                     android:textColor="#ffffff"
                     android:textSize="15sp" />
 
                 <EditText
-                    android:id="@+id/email"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     android:background="@drawable/whitebox"
-                    android:hint="Enter Email"
-                    android:inputType="textEmailAddress"
-                    android:padding="13dp"
-                    android:textSize="13sp"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="25dp"
-                    android:text="Password"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/pass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:background="@drawable/whitebox"
-                    android:hint="Enter your password"
-                    android:inputType="textPassword"
-                    android:padding="13dp"
-                    android:textSize="13sp"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginStart="25sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="25dp"
-                    android:text="Forgot your password?"
-                    android:textColor="#ffffff"
+                    android:hint="Enter Name"
+                    android:padding="10dp"
                     android:textSize="10sp"
-                    android:onClick="forgotpass"
-                    tools:ignore="TouchTargetSizeCheck"
-                    />
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Description"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/whitebox"
+                    android:hint="Enter Description"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Status"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/whitebox"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
 
                 <Button
-                    android:id="@+id/login"
-                    android:layout_width="175dp"
+                    android:id="@+id/uploadmentor"
+                    android:layout_width="match_parent"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
+                    android:layout_margin="30dp"
                     android:background="@drawable/whitebox"
-                    android:text="Login"
-                    android:textColor="#50C2C9"
+                    android:backgroundTint="#157177"
+                    android:text="Upload"
+                    android:textColor="#FFFFFF"
                     android:textAllCaps="false"
                     tools:ignore="TouchTargetSizeCheck" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginBottom="5sp"
-                        android:text="Don't have an account?"
-                        android:textColor="#ffffff"
-                        android:textSize="12sp"
-                        tools:ignore="TouchTargetSizeCheck"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:layout_marginTop="5sp"
-                        android:layout_marginStart="5sp"
-                        android:layout_marginBottom="5sp"
-                        android:text="Signup"
-                        android:textColor="#1A787E"
-                        android:textSize="12sp"
-                        android:onClick="signup"
-                        tools:ignore="TouchTargetSizeCheck"
-                        />
-
-
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -223,4 +209,4 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

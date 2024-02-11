@@ -97,7 +97,7 @@ email associated with your account."
             android:text="Login"
             android:textColor="#1A787E"
             android:textSize="12sp"
-            android:clickable="true"
+            android:onClick="login"
             tools:ignore="TouchTargetSizeCheck"
             />
 

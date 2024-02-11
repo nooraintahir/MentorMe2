@@ -3,6 +3,7 @@ package com.nooraintahir.i200517
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.nooraintahir.i200517.databinding.ActivityNavigationBinding
 
 class NavigationActivity : AppCompatActivity() {
@@ -12,6 +13,11 @@ class NavigationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener {
+            replaceFragment(AddMentorActivity())
+        }
 
         binding.bottomnavigation.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
@@ -35,7 +41,13 @@ class NavigationActivity : AppCompatActivity() {
             .commit()
     }
 
+    fun switchHome() {
+        replaceFragment(HomeActivity())
+        binding.bottomnavigation.selectedItemId = R.id.navigation_home
+    }
+
     fun showSearchResults() {
         replaceFragment(SearchResultsActivity())
     }
+
 }
