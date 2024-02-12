@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 
 class HomeActivity : Fragment() {
     override fun onCreateView(
@@ -20,6 +21,13 @@ class HomeActivity : Fragment() {
 
         mentorbtn.setOnClickListener {
             val intent = Intent(requireContext(), MentorActivity::class.java)
+            startActivity(intent)
+        }
+
+        val notif = view.findViewById<ImageButton>(R.id.notif)
+
+        notif.setOnClickListener {
+            val intent = Intent(requireContext(), NotificationActivity::class.java)
             startActivity(intent)
         }
 
