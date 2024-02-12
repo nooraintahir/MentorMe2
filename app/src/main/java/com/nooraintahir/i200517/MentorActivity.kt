@@ -15,5 +15,11 @@ class MentorActivity : AppCompatActivity() {
             val intent = Intent(this, MentorReviewActivity::class.java)
             startActivity(intent)
         }
+
+        val booksession = findViewById<Button>(R.id.session)
+        booksession.setOnClickListener {
+            val intent = Intent(this, BookAppointmentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
