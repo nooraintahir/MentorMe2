@@ -8,22 +8,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 
-class ChatActivity : Fragment() {
+class MentorChatActivity : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val view =  inflater.inflate(R.layout.activity_chat, container, false)
+        val view =  inflater.inflate(R.layout.activity_mentor_chat, container, false)
 
-        val chat = view.findViewById<Button>(R.id.johnchat)
-        chat.setOnClickListener {
-            val results = requireActivity() as? NavigationActivity
-            results?.mentorChat()
-        }
+        //val chat = view.findViewById<Button>(R.id.johnchat)
+        //chat.setOnClickListener {
+
+        //}
 
         return view
     }
-
 }

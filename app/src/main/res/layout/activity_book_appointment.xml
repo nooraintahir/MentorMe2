@@ -27,14 +27,13 @@
             android:layout_marginEnd="5dp"
             android:layout_gravity="start"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Book your Session"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Book your Session"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <RelativeLayout

@@ -50,4 +50,8 @@ class NavigationActivity : AppCompatActivity() {
         replaceFragment(SearchResultsActivity())
     }
 
+    fun mentorChat() {
+        replaceFragment(MentorChatActivity())
+    }
+
 }

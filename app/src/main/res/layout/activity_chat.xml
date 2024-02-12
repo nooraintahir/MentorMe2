@@ -103,10 +103,11 @@
             android:layout_marginStart="20dp"
             />
 
-        <ImageView
+        <Button
+            android:id="@+id/johnchat"
             android:layout_width="270dp"
             android:layout_height="60dp"
-            android:src="@drawable/chat1"
+            android:background="@drawable/chat1"
             android:layout_margin="15dp"
             />
 
