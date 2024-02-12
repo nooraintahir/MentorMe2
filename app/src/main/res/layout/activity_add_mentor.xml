@@ -76,7 +76,7 @@
                 android:textColor="#000000"
                 android:textSize="15sp"
                 android:layout_gravity="center"
-                android:paddingTop="10sp"/>
+                />
 
         </LinearLayout>
 
@@ -102,17 +102,22 @@
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:paddingTop="30dp"
-                    >
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/picture"/>
 
-                    <ImageView
+                    >
+
+                    <Button
+                        android:id="@+id/uploadpicture"
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
+                        android:layout_height="90dp"
+                        android:background="@drawable/picture" />
+
+                    <Button
+                        android:id="@+id/uploadvideo"
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
                         android:layout_marginStart="30dp"
-                        android:src="@drawable/video"/>
+                        android:background="@drawable/video"
+                        />
                 </LinearLayout>
 
                 <TextView

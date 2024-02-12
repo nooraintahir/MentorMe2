@@ -3,13 +3,13 @@ package com.nooraintahir.i200517
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class CameraActivity : AppCompatActivity() {
+class VideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_camera)
+        setContentView(R.layout.activity_video)
     }
-    fun video(view: android.view.View) {
-        val intent = android.content.Intent(this, VideoActivity::class.java)
+    fun camera(view: android.view.View) {
+        val intent = android.content.Intent(this, CameraActivity::class.java)
         startActivity(intent)
     }
 }

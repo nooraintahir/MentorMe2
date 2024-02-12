@@ -1,5 +1,6 @@
 package com.nooraintahir.i200517
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +30,18 @@ class AddMentorActivity : Fragment() {
         uploadButton.setOnClickListener {
             val results = requireActivity() as? NavigationActivity
             results?.switchHome()
+        }
+
+        val photo = view.findViewById<Button>(R.id.uploadpicture)
+        photo.setOnClickListener {
+            val intent = Intent(requireContext(), CameraActivity::class.java)
+            startActivity(intent)
+        }
+
+        val video = view.findViewById<Button>(R.id.uploadvideo)
+        video.setOnClickListener {
+            val intent = Intent(requireContext(), VideoActivity::class.java)
+            startActivity(intent)
         }
 
         return view
