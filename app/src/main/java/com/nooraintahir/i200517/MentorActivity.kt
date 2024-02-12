@@ -3,6 +3,8 @@ package com.nooraintahir.i200517
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.Button
 
 class MentorActivity : AppCompatActivity() {
@@ -20,6 +22,14 @@ class MentorActivity : AppCompatActivity() {
         booksession.setOnClickListener {
             val intent = Intent(this, BookAppointmentActivity::class.java)
             startActivity(intent)
+        }
+
+        val community = findViewById<Button>(R.id.community)
+        community.setOnClickListener {
+            val intent = Intent(this, NavigationActivity::class.java)
+            intent.putExtra("FROM_MENTOR_ACTIVITY", true)
+            startActivity(intent)
+
         }
     }
 }

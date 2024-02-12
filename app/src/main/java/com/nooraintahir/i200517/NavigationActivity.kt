@@ -14,6 +14,13 @@ class NavigationActivity : AppCompatActivity() {
         binding = ActivityNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val fromMentorActivity = intent.getBooleanExtra("FROM_MENTOR_ACTIVITY", false)
+        if (fromMentorActivity) {
+            replaceFragment(CommunityActivity())
+            binding.bottomnavigation.selectedItemId = R.id.navigation_chat
+
+        }
+
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener {
             replaceFragment(AddMentorActivity())
@@ -30,7 +37,7 @@ class NavigationActivity : AppCompatActivity() {
         }
 
         // Set the default fragment
-        if (savedInstanceState == null) {
+        if (savedInstanceState == null && !fromMentorActivity) {
             replaceFragment(HomeActivity())
         }
     }
@@ -53,5 +60,6 @@ class NavigationActivity : AppCompatActivity() {
     fun mentorChat() {
         replaceFragment(MentorChatActivity())
     }
+
 
 }
