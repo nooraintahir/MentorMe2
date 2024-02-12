@@ -26,7 +26,7 @@ class CommunityActivity : Fragment() {
 
         val vidcall = view.findViewById<Button>(R.id.videoicon)
         vidcall.setOnClickListener {
-            val intent = Intent(requireContext(), CallActivity::class.java)
+            val intent = Intent(requireContext(), VideoCallActivity::class.java)
             startActivity(intent)
         }
 

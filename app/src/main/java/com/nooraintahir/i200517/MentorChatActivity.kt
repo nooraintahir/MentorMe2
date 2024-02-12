@@ -26,7 +26,7 @@ class MentorChatActivity : Fragment() {
 
         val vidcall = view.findViewById<Button>(R.id.videocallmentor)
         vidcall.setOnClickListener {
-            val intent = Intent(requireContext(), CallActivity::class.java)
+            val intent = Intent(requireContext(),VideoCallActivity::class.java)
             startActivity(intent)
         }
 
