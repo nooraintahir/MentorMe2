@@ -2,6 +2,15 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="LogintoHome">
+        <State />
+      </entry>
+      <entry key="NavigationActivityTest">
+        <State />
+      </entry>
+      <entry key="ToCommunityChat">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
