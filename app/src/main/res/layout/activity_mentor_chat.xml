@@ -56,7 +56,8 @@
                 android:src="@drawable/callicon"
                 android:layout_gravity="center"
                 app:tint="@color/white"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                android:onClick="call"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -64,7 +65,8 @@
                 android:src="@drawable/videocam"
                 android:layout_gravity="center"
                 app:tint="@color/white"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                android:onClick="videocall"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -245,6 +247,7 @@
             android:paddingTop="20dp"
             app:tint="@color/white"
             android:layout_gravity="right"
+            android:onClick="camera"
             />
         <ImageView
             android:layout_width="wrap_content"
