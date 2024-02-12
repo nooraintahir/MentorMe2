@@ -23,7 +23,7 @@ class NavigationActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.navigation_home -> replaceFragment(HomeActivity())
                 R.id.navigation_search -> replaceFragment(SearchActivity())
-                //R.id.navigation_chat -> replaceFragment(ChatFragment())
+                R.id.navigation_chat -> replaceFragment(ChatActivity())
                 //R.id.navigation_profile -> replaceFragment(ProfileFragment())
             }
             true

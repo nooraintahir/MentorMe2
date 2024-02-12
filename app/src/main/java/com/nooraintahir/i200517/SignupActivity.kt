@@ -37,7 +37,7 @@ class SignupActivity : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val selectedCountry = countries[position]
                 cities = when (selectedCountry) {
-                    "Pakistan" -> arrayOf("Select City", "Rawalpindi", "Islamabad", "Lahore", "Karachi")
+                    "Pakistan" -> arrayOf("Select City", "Rawalpindi", "Islamabad", "Lahore", "Muzaffarabad")
                     "Malaysia" -> arrayOf("Select City", "Kuala Lumpur", "Penang", "Johor Bahru", "Ipoh")
                     "Singapore" -> arrayOf("Select City", "Singapore City", "Jurong West", "Bedok", "Tampines")
                     "Taiwan" -> arrayOf("Select City", "Taipei", "Kaohsiung", "Taichung", "Tainan")
