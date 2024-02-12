@@ -1,5 +1,6 @@
 package com.nooraintahir.i200517
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,10 +18,17 @@ class CommunityActivity : Fragment() {
 
         val view =  inflater.inflate(R.layout.activity_community, container, false)
 
-        //val chat = view.findViewById<Button>(R.id.johnchat)
-        //chat.setOnClickListener {
+        val call = view.findViewById<Button>(R.id.callicon)
+        call.setOnClickListener {
+            val intent = Intent(requireContext(), CallActivity::class.java)
+            startActivity(intent)
+        }
 
-        //}
+        val vidcall = view.findViewById<Button>(R.id.videoicon)
+        vidcall.setOnClickListener {
+            val intent = Intent(requireContext(), CallActivity::class.java)
+            startActivity(intent)
+        }
 
         return view
     }
