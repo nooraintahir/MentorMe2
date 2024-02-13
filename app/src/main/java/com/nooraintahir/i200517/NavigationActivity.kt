@@ -31,7 +31,7 @@ class NavigationActivity : AppCompatActivity() {
                 R.id.navigation_home -> replaceFragment(HomeActivity())
                 R.id.navigation_search -> replaceFragment(SearchActivity())
                 R.id.navigation_chat -> replaceFragment(ChatActivity())
-                //R.id.navigation_profile -> replaceFragment(ProfileFragment())
+                R.id.navigation_profile -> replaceFragment(ProfileActivity())
             }
             true
         }
