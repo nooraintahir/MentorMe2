@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.fragment.app.Fragment
 
@@ -42,6 +43,12 @@ class AddMentorActivity : Fragment() {
         video.setOnClickListener {
             val intent = Intent(requireContext(), VideoActivity::class.java)
             startActivity(intent)
+        }
+
+        val back = view.findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val results = requireActivity() as? NavigationActivity
+            results?.switchHome()
         }
 
         return view

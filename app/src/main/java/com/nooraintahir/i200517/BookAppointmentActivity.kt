@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CalendarView
+import android.widget.ImageButton
 import java.util.Calendar
 
 class BookAppointmentActivity : AppCompatActivity() {
@@ -17,6 +18,30 @@ class BookAppointmentActivity : AppCompatActivity() {
             val intent = Intent(this, MentorActivity::class.java)
             startActivity(intent)
         }
+
+        val back = findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val intent = Intent(this, MentorActivity::class.java)
+            startActivity(intent)
+        }
+        val chat = findViewById<Button>(R.id.chat)
+        chat.setOnClickListener {
+            val intent = Intent(this, NavigationActivity::class.java)
+            intent.putExtra("FROM_MENTOR_ACTIVITY", true)
+            startActivity(intent)
+
+        }
+        val call = findViewById<Button>(R.id.call)
+        call.setOnClickListener {
+            val intent = Intent(this, CallActivity::class.java)
+            startActivity(intent)
+        }
+        val vidcall = findViewById<Button>(R.id.videocall)
+        vidcall.setOnClickListener {
+            val intent = Intent(this, VideoCallActivity::class.java)
+            startActivity(intent)
+        }
+
         val calendarView = findViewById<CalendarView>(R.id.cal)
 
         // Set Monday as the first day of the week

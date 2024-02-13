@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 
 class MentorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,5 +32,11 @@ class MentorActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        val back = findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val intent = Intent(this, NavigationActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

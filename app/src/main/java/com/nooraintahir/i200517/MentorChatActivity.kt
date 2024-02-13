@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 
 class MentorChatActivity : Fragment() {
@@ -28,6 +29,17 @@ class MentorChatActivity : Fragment() {
         vidcall.setOnClickListener {
             val intent = Intent(requireContext(),VideoCallActivity::class.java)
             startActivity(intent)
+        }
+        val photo = view.findViewById<ImageButton>(R.id.camerabtn)
+        photo.setOnClickListener {
+            val intent = Intent(requireContext(), CameraActivity::class.java)
+            startActivity(intent)
+        }
+
+        val back = view.findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val results = requireActivity() as? NavigationActivity
+            results?.replaceFragment(ChatActivity())
         }
 
         return view

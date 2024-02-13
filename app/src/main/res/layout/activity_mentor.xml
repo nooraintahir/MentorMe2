@@ -16,13 +16,14 @@
         android:paddingBottom="30dp"
         >
 
-        <ImageView
+
+        <ImageButton
             android:id="@+id/backarrow"
+            android:background="@drawable/backarrow"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginTop="25dp"
-            android:src="@drawable/backarrow"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
             android:layout_gravity="start"/>
 
         <RelativeLayout

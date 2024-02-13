@@ -7,13 +7,14 @@
     android:background="#DEF8F8"
     tools:context=".VerifyActivity">
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/backarrow"
+        android:background="@drawable/backarrow"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="30sp"
-        android:src="@drawable/backarrow"
         android:layout_gravity="start"/>
 
     <TextView

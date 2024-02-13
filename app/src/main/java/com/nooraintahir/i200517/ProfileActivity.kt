@@ -31,6 +31,12 @@ class ProfileActivity : Fragment() {
             startActivity(intent)
         }
 
+        val back = view.findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val results = requireActivity() as? NavigationActivity
+            results?.switchHome()
+        }
+
         return view
     }
 }

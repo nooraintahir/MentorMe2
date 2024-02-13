@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 
 class ChatActivity : Fragment() {
@@ -21,6 +22,12 @@ class ChatActivity : Fragment() {
         chat.setOnClickListener {
             val results = requireActivity() as? NavigationActivity
             results?.mentorChat()
+        }
+
+        val back = view.findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val results = requireActivity() as? NavigationActivity
+            results?.switchHome()
         }
 
         return view

@@ -9,12 +9,13 @@
     android:padding="30dp"
     tools:context=".ForgotPassActivity">
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/backarrow"
+        android:background="@drawable/backarrow"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="15dp"
-        android:src="@drawable/backarrow"
         android:layout_gravity="start"/>
 
     <TextView

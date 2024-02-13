@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 
 class CommunityActivity : Fragment() {
@@ -27,6 +28,12 @@ class CommunityActivity : Fragment() {
         val vidcall = view.findViewById<Button>(R.id.videoicon)
         vidcall.setOnClickListener {
             val intent = Intent(requireContext(), VideoCallActivity::class.java)
+            startActivity(intent)
+        }
+
+        val back = view.findViewById<ImageButton>(R.id.backarrow)
+        back.setOnClickListener {
+            val intent = Intent(requireContext(), MentorActivity::class.java)
             startActivity(intent)
         }
 
