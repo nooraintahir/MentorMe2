@@ -23,7 +23,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/backarrow"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="15dp"
             android:layout_marginEnd="5dp"
             android:layout_gravity="start"/>
 
@@ -33,7 +33,9 @@
                 android:text="Book your Session"
                 android:textAlignment="center"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="#157177"
+                />
         </LinearLayout>
 
         <RelativeLayout
@@ -48,6 +50,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+
                 >
 
                 <TextView
@@ -87,6 +91,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             >
 
                 <TextView
@@ -102,7 +108,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="right|center_vertical">
+                android:gravity="right|center_vertical"
+                android:layout_marginStart="10dp"
+                >
 
 
                 <Button
@@ -139,7 +147,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp"
         >
         <CalendarView
             android:id="@+id/cal"
@@ -155,9 +162,10 @@
             android:layout_height="wrap_content"
             android:text="Available Time Slots"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_margin="15dp"
+            android:paddingStart="10dp"
+            android:layout_margin="10dp"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,24 +175,25 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="45dp"
                 android:background="@drawable/whitebox"
                 android:backgroundTint="#D9D9D9"
                 android:text="10.00 AM"
                 android:textColor="#000000"
-                android:textSize="12sp"
+                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:layout_marginEnd="15dp"
+
                 />
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="45dp"
                 android:background="@drawable/whitebox"
                 android:backgroundTint="#0B8FAC"
                 android:text="11.00 AM"
                 android:textColor="#ffffff"
-                android:textSize="12sp"
+                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:layout_marginEnd="15dp"
@@ -192,12 +201,12 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="45dp"
                 android:background="@drawable/whitebox"
                 android:backgroundTint="#D9D9D9"
                 android:text="12.00 AM"
                 android:textColor="#000000"
-                android:textSize="12sp"
+                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:layout_marginEnd="15dp"
@@ -206,7 +215,11 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="20dp"
+            >
 
             <Button
                 android:id="@+id/bookappoint"

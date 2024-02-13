@@ -106,18 +106,20 @@
                     >
 
                     <Button
-                        android:id="@+id/uploadpicture"
-                        android:layout_width="150dp"
-                        android:layout_height="90dp"
-                        android:background="@drawable/picture" />
-
-                    <Button
                         android:id="@+id/uploadvideo"
-                        android:layout_width="150dp"
-                        android:layout_height="90dp"
-                        android:layout_marginStart="30dp"
+                        android:layout_width="130dp"
+                        android:layout_height="75dp"
                         android:background="@drawable/video"
                         />
+
+                    <Button
+                        android:id="@+id/uploadpicture"
+                        android:layout_width="130dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="30dp"
+                        android:background="@drawable/picture" />
+
+
                 </LinearLayout>
 
                 <TextView
@@ -210,7 +212,7 @@
                 <Button
                     android:id="@+id/uploadmentor"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="45dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:layout_margin="30dp"
