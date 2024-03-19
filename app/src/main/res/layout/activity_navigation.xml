@@ -41,6 +41,7 @@
             app:itemTextColor="@drawable/item_nav"
             app:labelVisibilityMode="labeled"
 
+
             />
 
     </com.google.android.material.bottomappbar.BottomAppBar>

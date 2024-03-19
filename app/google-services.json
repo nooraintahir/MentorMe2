@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588094091464",
+    "project_id": "assignment-d4b5a",
+    "storage_bucket": "assignment-d4b5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588094091464:android:50ece6d8891667999975fd",
+        "android_client_info": {
+          "package_name": "com.nooraintahir.i200517"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK5zGolqAZ7rs_zbY01Jz6-3D3WLq0i9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
